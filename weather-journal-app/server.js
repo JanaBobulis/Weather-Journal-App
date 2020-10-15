@@ -45,5 +45,5 @@ app.post('/add', function (req, res){
         projectData = newData;
         console.log(projectData);
         res.send(projectData);
-        
+
 });
