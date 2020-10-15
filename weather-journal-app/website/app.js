@@ -29,7 +29,7 @@ function performAction(e) {
 
     .then(function(data){
         console.log(data)
-        postData('/addData', {temperature: data.temp, response: feelings, date: newDate})
+        postData('/add', {temperature: data.main.temp, response: feelings, date: newDate})
     .then(function() {
         updateUI()
     })
@@ -67,5 +67,3 @@ const postData = async (url ='', data = {}) => {
         console.log('error', error);
     }
 }
-
-
