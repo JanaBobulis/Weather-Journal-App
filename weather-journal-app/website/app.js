@@ -13,7 +13,6 @@ const getData = async (baseURL, zip, apiKey)=>{
     const res = await fetch(baseURL + zip + apiKey);
     try {
         const data = await res.json();
-        console.log(data);
         return data;
     } catch(error) {
         console.log("error", error);
@@ -41,9 +40,9 @@ const updateUI = async() => {
     const req = await fetch('http://localhost:3030/all');
     try{
         const allData = await req.json();
-        document.getElementById('date').innerHTML = allData.date;
-        document.getElementById('temp').innerHTML = allData.temperature;
-        document.getElementById('content').innerHTML = allData.response;
+        document.getElementById('date').innerHTML = `Date: ${allData.date}`;
+        document.getElementById('temp').innerHTML = `Temperature: ${allData.temperature}°`;
+        document.getElementById('content').innerHTML = `Mood: ${allData.response}`;
     }catch(error){
         console.log("error", error);
     }
@@ -67,3 +66,5 @@ const postData = async (url ='', data = {}) => {
         console.log('error', error);
     }
 }
+
+
