@@ -5,8 +5,8 @@ let d = new Date();
 let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
 
 // Personal API Key for OpenWeatherMap API
-let baseURL = 'http://api.openweathermap.org/data/2.5/weather?zip=';
-let apiKey = '&units=metric&APPID=e4556829179c13d93b039efb3a3c764f';
+const baseURL = 'http://api.openweathermap.org/data/2.5/weather?zip=';
+const apiKey = '&units=metric&APPID=e4556829179c13d93b039efb3a3c764f';
 
 //Write an async function in app.js that uses fetch() to make a GET request to the OpenWeatherMap API.
 const getData = async (baseURL, zip, apiKey)=>{
