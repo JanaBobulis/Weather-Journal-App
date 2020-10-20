@@ -37,7 +37,7 @@ app.get('/all', getData);
 app.post('/add', function (req, res){
      newData = { 
         date: req.body.date,
-        temperature: req.body.temp,
+        temperature: req.body.temperature,
         response: req.body.response,
         }
         projectData = newData;
