@@ -3,6 +3,7 @@ This project is made with an asynchronous web app that uses Web API and user dat
 
 ### A note 
 You can see a more thorough explanation of each step in the code. It has been built this way for studying purposes. 
+This project currently uses US ZIP codes, however will be updated in the future to use UK ZIP codes.
 
 ### Setting up the project 
 Node as well as the following packages need to be installed:
