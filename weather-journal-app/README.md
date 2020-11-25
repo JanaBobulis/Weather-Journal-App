@@ -1,6 +1,11 @@
 ## Weather-Journal App Project
 This project is made with an asynchronous web app that uses Web API and user data to dynamically update the UI in a Weather Journal application. 
 
+## How it works 
+
+![ezgif com-video-to-gif-11](https://user-images.githubusercontent.com/71527795/100225211-c3291400-2f15-11eb-90a0-faafeef474e3.gif)
+
+
 ### A note 
 You can see a more thorough explanation of each step in the code. It has been built this way for studying purposes. 
 This project currently uses US ZIP codes, however will be updated in the future to use UK ZIP codes.
